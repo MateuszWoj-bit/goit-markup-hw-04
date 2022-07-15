@@ -11,6 +11,27 @@
   --border-portfolio-color: #eeeeee;
 }
 
+.phone{display: flex;
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+    fill: var(--grey-color);;
+    margin-top: 10px;
+
+}
+
+.mobile-svg{height: 20px;
+width: 20px;
+--icon-color: currentColor;
+margin-right: 10px;}
+.envelope-svg{height: 40px;
+width: 40px;
+--icon-color: currentColor;
+}
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -42,7 +63,7 @@ footer {
 }
 header .container {
   display: flex;
-  align-items: baseline;
+  
 }
 img {
   display: block;
@@ -65,16 +86,21 @@ ul {
   color: var(--brand-color);
 }
 .contact {
-  margin-left: 371px;
+  margin-left: 331px;
   display: flex;
   color: var(--grey-color);
+    fill: var(--grey-color);;
+  margin-top: 10px;
 }
-.contact .grey:hover,
-.contact .grey:focus {
+.contact:hover,
+.contact .grey:focus,
+.phone:hover{
   color: var(--brand-color);
+  fill: var(--brand-color);
+  --icon-color:var(--brand-color)
 }
 .contact,
-.navigation {
+.navigation,.phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -142,6 +168,7 @@ ul {
   border-bottom: 1px solid var(--border-color);
 }
 .navigation {
+  margin-top: 10px;
   margin-left: 93px;
   display: flex;
 }

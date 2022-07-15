@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9fd;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+      }
+
+      .icon {
+        margin-left: 12px;
+        margin-right: 12px;
+
+        padding: 10px;
+        /* fill: red; */
+      }
+
+      .icon.i-50 {
+        width: 50px;
+        height: 50px;
+        fill: 000000;
+      }
+      svg {
+        width: 80%;
+        height: 80%;
+      }
+      .social-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #2a2a2a;
+        text-align: center;
+      }
+      .icon:hover {
+        fill: #03a9f4;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="container">
+        <h1 class="logo">
+          <a href="./index.html" class="link"><span class="blue">Web</span>Studio</a>
+        </h1>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation-item"><a href="#" class="link">Agencja</a></li>
+            <li class="navigation-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="#" class="link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li class="navigation-item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="social-icon">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-instagram"></use>
+        </svg>
+      </div>
+      <div>
+        <svg class="icon i-50">
+          <use xlink:href="./sprite.svg#antenna 1"></use>
+        </svg>
+      </div>
+    
+  </body>
+</html>
