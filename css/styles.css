@@ -9,24 +9,58 @@
   --panetone-color: #2f303a;
   --border-color: #ececec;
   --border-portfolio-color: #eeeeee;
-  --social-color-og: #AFB1B8;
+  --icon-base-color: #AFB1B8;
+  --social-backgroud-footer: #ffffff1a;
 }
+
+.footer-social-tab{
+margin-left: 70px;
+padding-top: 12px;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white-color);}
 
 .team-social-list-item {
   display: block;
   border-radius: 50%;
   background-color: var(--white-color);
-  fill: var(--social-color-og);
+  fill: var(--icon-base-color);
 
 }
+.team-social-list-item:nth-child(n + 2) {margin-left: 10px;}
+.footer-social-list-item:nth-child(n + 2) {margin-left: 10px;}
 .social-svg {
-  height: 50px;
-  width: 50px;
+  height: 44px;
+  width: 44px;
   --icon-color: currentColor;
+  
 }
 .social-svg:hover {border-radius: 50%;
  background-color: var(--brand-color);
   fill: var(--white-color);
+}
+
+.footer-social-list{display: flex;justify-content: center; margin-top: 20px;}
+.footer-social-list-item {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--social-backgroud-footer);
+  fill: var(--white-color);
+  height: 44px;
+  width: 44px;
+
+}
+.footer-social-svg {
+  height: 44px;
+  width: 44px;
+  --icon-color: currentColor;
+}
+.footer-social-svg:hover {border-radius: 50%;
+ background-color: var(--brand-color);
+  fill: var(--white-color);
+  
 }
 
 .phone {
@@ -65,6 +99,24 @@
   margin-bottom: 30px;
   border-radius: 4px;
 }
+.customer-svg {
+  height: 60px;
+  width: 106px;
+}
+
+.customer-svg-box {
+  height: 92px;
+  width: 170px;
+  padding: 17.71px 32px 14.25px;
+  border: 1px solid var(--icon-base-color);
+  border-radius: 4px;
+  fill: var(--icon-base-color);
+}
+
+.customer-svg-box:hover {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+}
 
 
 
@@ -91,12 +143,15 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--site-color);
 }
-button, .social-svg {
+button, .social-svg, .customer-svg-box {
   cursor: pointer;
 }
 footer {
   padding: 60px 0px;
   background: var(--panetone-color);
+}
+footer .container{display: flex;
+  
 }
 header .container {
   display: flex;
@@ -311,7 +366,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 .team-social-list{display: flex;justify-content: center; margin-top: 16px;}
-.team-social-list .team-social-list-item {margin-left: 0px;}
+
 
 
 .tools {
@@ -361,6 +416,14 @@ ul {
   margin-top: 50px;
   display: flex;
 }
+.customers-list {
+  display: flex;
+  margin-top: 50px;
+}
+.customers-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
 .what-we-do-list li:not(:first-child) {
   margin-left: 30px;
 }
