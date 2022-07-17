@@ -9,116 +9,9 @@
   --panetone-color: #2f303a;
   --border-color: #ececec;
   --border-portfolio-color: #eeeeee;
-  --icon-base-color: #AFB1B8;
+  --icon-base-color: #afb1b8;
   --social-backgroud-footer: #ffffff1a;
 }
-
-.footer-social-tab{
-margin-left: 70px;
-padding-top: 12px;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--white-color);}
-
-.team-social-list-item {
-  display: block;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  fill: var(--icon-base-color);
-
-}
-.team-social-list-item:nth-child(n + 2) {margin-left: 10px;}
-.footer-social-list-item:nth-child(n + 2) {margin-left: 10px;}
-.social-svg {
-  height: 44px;
-  width: 44px;
-  --icon-color: currentColor;
-  
-}
-.social-svg:hover {border-radius: 50%;
- background-color: var(--brand-color);
-  fill: var(--white-color);
-}
-
-.footer-social-list{display: flex;justify-content: center; margin-top: 20px;}
-.footer-social-list-item {
-  display: block;
-  border-radius: 50%;
-  background-color: var(--social-backgroud-footer);
-  fill: var(--white-color);
-  height: 44px;
-  width: 44px;
-
-}
-.footer-social-svg {
-  height: 44px;
-  width: 44px;
-  --icon-color: currentColor;
-}
-.footer-social-svg:hover {border-radius: 50%;
- background-color: var(--brand-color);
-  fill: var(--white-color);
-  
-}
-
-.phone {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey-color);
-  fill: var(--grey-color);
-  margin-top: 10px;
-}
-
-.mobile-svg {
-  height: 16px;
-  width: 10px;
-  --icon-color: currentColor;
-  margin-right: 10px;
-}
-.envelope-svg {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-  --icon-color: currentColor;
-}
-.antenna-svg {
-  height: 70px;
-  width: 70px;
-}
-
-.antenna-svg-box {
-  height: 120px;
-  width: 270px;
-  padding: 25px 100px;
-  background-color: var(--grey-background-color);
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-.customer-svg {
-  height: 60px;
-  width: 106px;
-}
-
-.customer-svg-box {
-  height: 92px;
-  width: 170px;
-  padding: 17.71px 32px 14.25px;
-  border: 1px solid var(--icon-base-color);
-  border-radius: 4px;
-  fill: var(--icon-base-color);
-}
-
-.customer-svg-box:hover {
-  border: 1px solid var(--brand-color);
-  fill: var(--brand-color);
-}
-
-
 
 * {
   margin: 0px;
@@ -143,15 +36,17 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--site-color);
 }
-button, .social-svg, .customer-svg-box {
+button,
+.social-svg,
+.customer-svg-box {
   cursor: pointer;
 }
 footer {
   padding: 60px 0px;
   background: var(--panetone-color);
 }
-footer .container{display: flex;
-  
+footer .container {
+  display: flex;
 }
 header .container {
   display: flex;
@@ -198,8 +93,43 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.feature-box .grey{width: 270px;}
-
+.customer-svg {
+  height: 60px;
+  width: 106px;
+}
+.customer-svg-box {
+  height: 92px;
+  width: 170px;
+  padding: 17.71px 32px 14.25px;
+  border: 1px solid var(--icon-base-color);
+  border-radius: 4px;
+  fill: var(--icon-base-color);
+}
+.customer-svg-box:hover {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+}
+.envelope-svg {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  --icon-color: currentColor;
+}
+.feature-svg {
+  height: 70px;
+  width: 70px;
+}
+.feature-svg-box {
+  height: 120px;
+  width: 270px;
+  padding: 25px 100px;
+  background-color: var(--grey-background-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.feature-box .grey {
+  width: 270px;
+}
 .features-list {
   display: flex;
   padding-bottom: 0px;
@@ -210,15 +140,15 @@ ul {
   line-height: 1.71;
   color: var(--grey-color);
 }
-.features-list li:nth-child(-n + 3) {margin-right: 30px;}
-
+.features-list li:nth-child(-n + 3) {
+  margin-right: 30px;
+}
 .features-list .lorem {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .footer-address {
   font-style: normal;
   font-size: 14px;
@@ -235,6 +165,38 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer-social-list-item {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--social-backgroud-footer);
+  fill: var(--white-color);
+  height: 44px;
+  width: 44px;
+}
+.footer-social-svg {
+  height: 44px;
+  width: 44px;
+  --icon-color: currentColor;
+}
+.footer-social-svg:hover {
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  fill: var(--white-color);
+}
+.footer-social-tab {
+  margin-left: 70px;
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 .grey {
   color: var(--grey-color);
@@ -258,10 +220,15 @@ ul {
 .lorem {
   margin-bottom: 10px;
 }
-
 .menu {
   padding: 25px 0px;
   border-bottom: 1px solid var(--border-color);
+}
+.mobile-svg {
+  height: 16px;
+  width: 10px;
+  --icon-color: currentColor;
+  margin-right: 10px;
 }
 .navigation {
   margin-top: 10px;
@@ -270,6 +237,16 @@ ul {
 }
 .navigation-item {
   margin-right: 46px;
+}
+.phone {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+  fill: var(--grey-color);
+  margin-top: 10px;
 }
 .portfolio button {
   padding: 6px 22px 6px 22px;
@@ -365,10 +342,33 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-social-list{display: flex;justify-content: center; margin-top: 16px;}
-
-
-
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.team-social-list-item {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  fill: var(--icon-base-color);
+}
+.team-social-list-item:nth-child(n + 2) {
+  margin-left: 10px;
+}
+.footer-social-list-item:nth-child(n + 2) {
+  margin-left: 10px;
+}
+.social-svg {
+  height: 44px;
+  width: 44px;
+  --icon-color: currentColor;
+}
+.social-svg:hover {
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  fill: var(--white-color);
+}
 .tools {
   padding: 200px 0px 200px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.5)),
@@ -377,10 +377,6 @@ ul {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
 }
-.tools-overlay {
-  background: red;
-}
-
 .tools h2 {
   font-weight: 900;
   font-size: 44px;
