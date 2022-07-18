@@ -93,10 +93,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.customer-svg {
-  height: 60px;
-  width: 106px;
-}
 .customer-svg-box {
   height: 92px;
   width: 170px;
@@ -110,15 +106,11 @@ ul {
   fill: var(--brand-color);
 }
 .envelope-svg {
-  height: 12px;
-  width: 16px;
+  
   margin-right: 10px;
   --icon-color: currentColor;
 }
-.feature-svg {
-  height: 70px;
-  width: 70px;
-}
+
 .feature-svg-box {
   height: 120px;
   width: 270px;
@@ -225,8 +217,6 @@ ul {
   border-bottom: 1px solid var(--border-color);
 }
 .mobile-svg {
-  height: 16px;
-  width: 10px;
   --icon-color: currentColor;
   margin-right: 10px;
 }
@@ -360,8 +350,6 @@ ul {
   margin-left: 10px;
 }
 .social-svg {
-  height: 44px;
-  width: 44px;
   --icon-color: currentColor;
 }
 .social-svg:hover {
